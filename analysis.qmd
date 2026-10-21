@@ -1,0 +1,18 @@
+---
+title: "Exploring Storms"
+author: "Trinnn28"
+format: html
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+storms |>
+  filter(year >= 2000) |>
+  select(year, name, status, wind, pressure)
+```
